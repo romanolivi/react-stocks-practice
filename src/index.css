@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.title {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.underline {
+  width: 5em;
+  height: .25em;
+  background: turquoise;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.container { 
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  padding: 0.4em;
+  margin: 1em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: lightseagreen;
+  color: white;
+  border: transparent;
+}
