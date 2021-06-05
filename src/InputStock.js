@@ -27,23 +27,30 @@ const InputStock = () => {
 
 
     const stockCard = () => {
-        return (
-            <div className="header">
-                <header>
-                    <h3>{stock.ticker}</h3>
-                    <img src={stock.logo} alt={stock.name} />
-                </header>
-                <footer>
-                    <p>Name: {stock.name}</p>
-                    <p>Industry: {stock.finnhubIndustry}</p>
-                    <p>Shares Outstanding: {stock.shareOutstanding}</p>
-                    <a href={stock.weburl}>Click to see website</a>
-                </footer>
-            </div>
-            
-        )
+        if (stock.name) {
+            return (
+                <div className="header">
+                    <header>
+                        <h3>{stock.ticker}</h3>
+                        <img src={stock.logo} alt={stock.name} />
+                    </header>
+                    <footer>
+                        <p>Name: {stock.name}</p>
+                        <p>Industry: {stock.finnhubIndustry}</p>
+                        <p>Shares Outstanding: {stock.shareOutstanding}</p>
+                        <a href={stock.weburl}>Click to see website</a>
+                    </footer>
+                </div>
+                
+            )
+        } else {
+            return ( 
+                <h3>Enter a Company</h3>
+            )
+        }
     }
 
+   
     return (
         <article>
             <form onSubmit={fetchStock}>
@@ -57,6 +64,8 @@ const InputStock = () => {
             </div>
         </article>
     )
+    
+    
 }
 
 export default InputStock;
