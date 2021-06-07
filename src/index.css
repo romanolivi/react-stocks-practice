@@ -25,10 +25,11 @@ code {
   margin-bottom: 10px;
 }
 
-.container { 
+.content { 
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 20px;
 }
 
 .btn {
