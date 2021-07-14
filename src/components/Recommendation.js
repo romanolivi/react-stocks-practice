@@ -54,8 +54,9 @@ const Recommendation = () => {
 
     return (
         <section className="content">
-            <h1 className="">Trends Page</h1>
+            <h1 className="trends-headline">Trends Page</h1>
             <div className="underline"></div>
+            <p>Enter a ticker below to see a company's stock quote information!</p>
 
             <form onSubmit={(e) => fetchStock(e)}>
                 <label>Enter Stock Ticker: </label>
