@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,7 +6,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  /* background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -14,6 +18,53 @@ code {
 
 .title {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article {
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.img-fluid {
+  border-color: lightcoral;
+  border-radius: 2em;
+  margin-top: 10px;
+  width:  800px;
+  height: 400px;
+}
+
+.news-section {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.card-header {
+  background: turquoise;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card-name, .card-industry, .card-shares {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: inherit;
+}
+
+article.next {
+  transform: translateX(100%);
+}
+
+article.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+article.last { 
+  transform: translateX(-100%);
 }
 
 .underline {
@@ -31,6 +82,18 @@ code {
   margin-left: auto;
   margin-top: 20px;
 }
+
+#stock-input {
+  margin-left: 5px;
+  border-color: turquoise;
+  border-style: groove;
+}
+
+#card-header {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: inherit;
+}
+
 
 .btn {
   padding: 0.4em;
